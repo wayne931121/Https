@@ -1,6 +1,6 @@
 ### C_https_client
 
-###Window Msys2 Mingw64 x64
+### Window Msys2 Mingw64 x64
 ### To Install OpenSSL and find <openssl/ssl.h> <openssl/opensslconf.h>.
 ### Download MSYS2 RUN Mingw64
 ###Run "pacman -S mingw-w64-x86_64-toolchain", and install gcc.
