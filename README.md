@@ -8,9 +8,11 @@
 ###cd to folder where "config" file is.
 ###change the prefix and openssldir to what you want.
 ### this command = "./Configure --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
-./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib
-make
-make install
+
+   ./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib
+   make
+   make install
+
 ### change c file to your file
 ### This c file include "#include <openssl/ssl.h>" line.
 ### Currect path "C:/msys64/home/ssl/include/openssl/ssl.h" in this example.
