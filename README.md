@@ -12,7 +12,9 @@ cd to folder where "config" file is.
 
 change the prefix and openssldir to what you want.
 
-This command = "./Configure --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
+This command "./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
+
+= "./Configure --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
 
     ./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib
     make
