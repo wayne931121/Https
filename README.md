@@ -7,7 +7,7 @@
 ###Download Source Code From https://github.com/openssl/openssl
 ###cd to folder where "config" file is.
 ###change the prefix and openssldir to what you want.
-### this command = "./Configure --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
+This command = "./Configure --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
 
     ./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib
     make
