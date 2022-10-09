@@ -29,7 +29,7 @@ This command "./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
 
     gcc tls.c -I"C:/msys64/home/ssl/include/" -L"C:/msys64/home/ssl/bin" -lws2_32 -llibssl-3-x64 -llibcrypto-3-x64
 
-### Add "C:/msys64/home/ssl/bin"(dll path) to environment path or copy dll file to the path where the ".exe" is. (a.exe)
+### Add "C:/msys64/home/ssl/bin"(dll path) to environment path or Copy dll file to the path where the ".exe" is. (a.exe)
 
     ./a
 
