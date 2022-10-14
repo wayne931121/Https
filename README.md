@@ -6,6 +6,8 @@
 
 Run "pacman -S mingw-w64-x86_64-toolchain", and install gcc.
 
+Run "pacman -S make".
+
 Download Source Code From https://github.com/openssl/openssl
 
 cd to folder where "config" file is.
