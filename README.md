@@ -6,7 +6,7 @@
 
 ## C_Https_Client
 
-### Run In Window Msys2 Mingw64 x64
+### Run In Windows Msys2 Mingw64 x64
 ### To Install OpenSSL and find <openssl/ssl.h> <openssl/opensslconf.h>.
 ### Download MSYS2 RUN Mingw64
 
