@@ -1,8 +1,8 @@
 ## Https Client
 
-["C"](#c_https_client)
+[C](#c_https_client)
 
-["Python"]("#Python Https Client")
+[Python]("#Python-Https-Client")
 
 ### C_Https_Client
 
