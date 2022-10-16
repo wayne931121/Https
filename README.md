@@ -49,3 +49,7 @@ This command "./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
 ## Python Https Client
 
     python https_client.py
+
+## Python Https Server
+
+    python https_server.py
