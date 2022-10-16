@@ -1,8 +1,8 @@
-## Https Client
+## Https Client/Server
 
-[C](#c_https_client)
+[C Https Client](#c_https_client)
 
-[Python](#Python-Https-Client)
+[Python Https Server/Client](#Python-Https-Client)
 
 ## C_Https_Client
 
