@@ -50,10 +50,10 @@ This command "./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
 
     python https_client.py
 
-## Python Https Server
-
-    python https_server.py
-
 ## Python Http Server
 
     python http_server.py
+
+## Python Https Server
+
+    python https_server.py
