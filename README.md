@@ -65,7 +65,7 @@ optional arguments:
   -print, -p            print recive bytes in cmd
   ```
 
-    python https_client.py -url https://www.example.com/ -f html -p
+    python https_client.py -url "https://www.example.com/" -f html -p
 
 
     python https_client_simple.py
