@@ -4,6 +4,39 @@
 
 [Python Client/Server](#Python-Https-Client)
 
+## Python Https Client
+
+```
+C:\Users\$Username\Downloads> python https_client.py -h
+usage: https_client.py [-h] [-url URL] [-format FORMAT] [-port PORT] [-ssl SSL] [-print]
+
+Get website source code. http/https client. (The url in Windows cmd must be "text...", not
+text...)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -url URL, -u URL      type a url (must be "http" or "https" at the beginning of string.)
+  -format FORMAT, -f FORMAT
+                        type the output format you want (like html, js, css, jpg, png...)
+  -port PORT            type the port you want (attention the port in the url is priority)
+  -ssl SSL              use ssl or not (0 or 1), default auto judge
+  -print, -p            print recive bytes in cmd
+```
+```
+python https_client.py -url "https://www.example.com/" -f html -p
+```
+```
+python https_client_simple.py
+```
+
+## Python Http Server
+
+    python http_server.py
+
+## Python Https Server
+
+    python https_server.py
+
 ## C_Https_Client
 
 ### Run In Windows Msys2 Mingw64 x64
@@ -45,36 +78,3 @@ This command "./config --prefix=/home/ssl --openssldir=/home/ossl shared zlib"
 ### Copy it to exe path or set C:\msys64\mingw64\bin\ to environment path.
 
     a
-
-## Python Https Client
-
-```
-C:\Users\$Username\Downloads> python https_client.py -h
-usage: https_client.py [-h] [-url URL] [-format FORMAT] [-port PORT] [-ssl SSL] [-print]
-
-Get website source code. http/https client. (The url in Windows cmd must be "text...", not
-text...)
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -url URL, -u URL      type a url (must be "http" or "https" at the beginning of string.)
-  -format FORMAT, -f FORMAT
-                        type the output format you want (like html, js, css, jpg, png...)
-  -port PORT            type the port you want (attention the port in the url is priority)
-  -ssl SSL              use ssl or not (0 or 1), default auto judge
-  -print, -p            print recive bytes in cmd
-```
-```
-python https_client.py -url "https://www.example.com/" -f html -p
-```
-```
-python https_client_simple.py
-```
-
-## Python Http Server
-
-    python http_server.py
-
-## Python Https Server
-
-    python https_server.py
