@@ -32,8 +32,8 @@ python https_client_simple.py
 ## Python Http Server
 
     # -https use ssl or not
-    python http_server.py
     
+    python http_server.py
     python http_server.py -https
 
 ## Python Https Server
