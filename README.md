@@ -31,7 +31,7 @@ python https_client_simple.py
 
 ## Python Http Server
 
-    # -https use ssl or not
+    # -https use ssl or not (ssl need crt and key)
     
     python https_server.py -https
     python https_server.py
