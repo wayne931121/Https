@@ -33,12 +33,12 @@ python https_client_simple.py
 
     # -https use ssl or not
     
-    python http_server.py
-    python http_server.py -https
-
-## Python Https Server
-
+    python https_server.py -https
     python https_server.py
+
+## Python Http Server
+
+    python http_server.py
 
 ## C_Https_Client
 
