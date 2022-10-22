@@ -63,12 +63,13 @@ optional arguments:
   -port PORT            type the port you want (attention the port in the url is priority)
   -ssl SSL              use ssl or not (0 or 1), default auto judge
   -print, -p            print recive bytes in cmd
-  ```
-
-    python https_client.py -url "https://www.example.com/" -f html -p
-
-
-    python https_client_simple.py
+```
+```
+python https_client.py -url "https://www.example.com/" -f html -p
+```
+```
+python https_client_simple.py
+```
 
 ## Python Http Server
 
