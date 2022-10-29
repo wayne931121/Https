@@ -29,7 +29,7 @@ python https_client.py -url "https://www.example.com/" -f html -p
 python https_client_simple.py
 ```
 
-## Python Http Server
+## Python Https Server
 
     # -https use ssl or not (ssl need crt and key)
     
