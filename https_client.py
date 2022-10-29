@@ -51,7 +51,6 @@ def client():
     if webpage=="/":
         filename = "result%s.html" if not f else "result%s."+f
     else:
-        print(webpage)
         filetmp = webpage.split("?")[0].split("/")[-1].split(".")
         if len(filetmp)==1:
             filename = filetmp[0]+"%s"
@@ -60,7 +59,8 @@ def client():
             filename =".".join(filetmp[:-1])+"%s."
             filename += filetmp[-1] if not f else f
     
-    filename_ = ".".join(filename.split(".")[:-1])
+    filename_ = ".".join(filename.split(".")[:-1]) if "." in filename else filename
+    
     port =  port if port else port_ if port_ else "443" if protocol=="https" else "80" #1.if the port in url 2.if user define port 3.let me auto choice by protocol.
     # user_agent = UserAgent()['google chrome'] #generate a fake user_agent by using module.# pip install fake-useragent
     request_args = [webpage, hostname, port, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.52"]
@@ -103,11 +103,11 @@ def client():
     if length:
         recive_all, recive_content = recive_file(conn, int(length["length"]), eof_data, prt)
     else:
-        recive_all, recive_content = recive_html(conn, eof_data, prt)
+        recive_all, recive_content = recive_transfer_encoding_chunked(conn, eof_data, prt)
     recive += recive_all
     with open(os.path.join(os.getcwd(), filename_%"_original.html"), "wb") as html:
         html.write(recive)
-    with open(os.path.join(os.getcwd(), filename_%"_header.html"), "wb") as html:
+    with open(os.path.join(os.getcwd(), filename_%"_header.txt"), "wb") as html:
         html.write(recive_headers)
     with open(os.path.join(os.getcwd(), filename%""), "wb") as html:
         html.write(recive_content)
@@ -140,7 +140,7 @@ def recive_file(conn, length, eof_data, prt):
     recive_content += recive
     return recive, recive_content
         
-def recive_html(conn, eof_data, prt):
+def recive_transfer_encoding_chunked(conn, eof_data, prt):
     length = 0 #now length
     total_length = 0
     have_length = 0 #-> True/False
